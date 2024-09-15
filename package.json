@@ -1,7 +1,7 @@
 {
   "name": "pseudo-crypto",
-  "version": "1.0.1",
-  "description": "pseudo-crypto",
+  "version": "1.0.4",
+  "description": "Hash numeric identifiers.",
   "main": "dist/cjs/main.js",
   "module": "dist/mjs/main.js",
   "exports": {
