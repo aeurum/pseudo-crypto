@@ -383,11 +383,4 @@ class PseudoCrypto {
   unhash(string) {
     return Number(this.#unbase(string) * this.#goldenInverses[string.length] % this.#characterCount ** BigInt(string.length))
   }
-
-  gett() {
-    return this.#characterCodes
-  }
-  getx() {
-    return this.#goldenPrimes
-  }
 }
