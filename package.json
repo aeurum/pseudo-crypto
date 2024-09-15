@@ -1,0 +1,33 @@
+{
+  "name": "pseudo-crypto",
+  "version": "1.0.1",
+  "description": "pseudo-crypto",
+  "main": "dist/cjs/main.js",
+  "module": "dist/mjs/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/main.js",
+      "require": "./dist/cjs/main.js"
+    }
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./addtype"
+  },
+  "keywords": [
+    "pseudo",
+    "crypto",
+    "hash",
+    "fixed-width",
+    "obfuscation",
+    "data-masking",
+    "anonymization",
+    "pseudonymization"
+  ],
+  "author": "Me",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "jest": "^29.7.0"
+  }
+}
