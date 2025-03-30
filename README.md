@@ -30,3 +30,9 @@ console.log([
   pc.alphanumeric.hash(12345, 16)       // d29BtQouSWVtnhIX
 ].join('\n'))
 ```
+
+## Contributing
+Contributions are only allowed in TON:
+```
+UQCYqT9-ycmXE3o57Cac1sM5ntIKdjqIwP3kzWmiZik0VU_b
+```
