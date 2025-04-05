@@ -96,7 +96,7 @@ class PseudoCrypto {
           character_count: BigInt(52),
           character_codes: [ ...this.#range(65, 90), ...this.#range(97, 122) ]
         }
-      case 'AN':
+      case 'A9':
       case 'alphanumeric':
         return {
           fill_string: '0',
