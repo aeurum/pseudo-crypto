@@ -8,28 +8,35 @@ npm i pseudo-crypto
 
 ## Usage
 ```
-const { PseudoCrypto } = require('pseudo-crypto')
-// import { PseudoCrypto } from 'pseudo-crypto'
+const PseudoCrypto = require('pseudo-crypto')
+// import PseudoCrypto from 'pseudo-crypto'
 
 const pc = {
   numeric: new PseudoCrypto('09'),
-  uppercase: new PseudoCrypto('AZ'),
+  inline: new PseudoCrypto('l_'),
+  wide: new PseudoCrypto('l-'),
   lowercase: new PseudoCrypto('az'),
-  lowercase_wide: new PseudoCrypto('l-'),
-  lowercase_inline: new PseudoCrypto('l_'),
+  uppercase: new PseudoCrypto('AZ'),
   alphabetic: new PseudoCrypto('Az'),
-  alphanumeric: new PseudoCrypto('AN') // default
+  alphanumeric: new PseudoCrypto('A9') // default
 }
 console.log([
-  pc.numeric.hash(12345),               // 81485
-  pc.uppercase.hash(12345, 6),          // QJQYJR
-  pc.lowercase.hash(12345, 8),          // qjpsdsql
-  pc.lowercase_wide.hash(12345, 10),    // rerrowgbkd
-  pc.lowercase_inline.hash(12345, 12),  // ueoevwcxavec
-  pc.alphabetic.hash(12345, 14),        // gmVcZTCcUhvqOF
-  pc.alphanumeric.hash(12345, 16)       // d29BtQouSWVtnhIX
+  pc.numeric.hash(123, 4),      // 2231
+  pc.inline.hash(123, 6),       // amcnno
+  pc.wide.hash(123, 8),         // amakvopn
+  pc.lowercase.hash(123, 10),   // amhocteszt
+  pc.uppercase.hash(123, 12),   // AMHOCTEMZQOF
+  pc.alphabetic.hash(123, 14),  // AxIRjfDrnqmIwH
+  pc.alphanumeric.hash(123, 16) // 17swtRKHykKxTu9D
 ].join('\n'))
 ```
+
+You can also configure it to always unhash to `BigInt`:
+```
+const pc = new PseudoCrypto('A9', true)
+// OR pc.onlyBigInt = true
+```
+
 
 ## Contributing
 Contributions are only allowed in TON:
