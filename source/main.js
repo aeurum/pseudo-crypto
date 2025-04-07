@@ -1,3 +1,3 @@
-import { PseudoCrypto } from './pseudo-crypto'
+import PseudoCrypto from './pseudo-crypto'
 
-export { PseudoCrypto }
+export = PseudoCrypto
