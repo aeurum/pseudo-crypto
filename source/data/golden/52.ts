@@ -1,0 +1,40 @@
+import { GoldenPrimes, GoldenInverses } from '../../interfaces'
+
+export const primes52: GoldenPrimes = [
+  BigInt('2'),
+  BigInt('37'),
+  BigInt('1693'),
+  BigInt('86923'),
+  BigInt('4518859'),
+  BigInt('234979021'),
+  BigInt('12218908787'),
+  BigInt('635383255037'),
+  BigInt('33039929261789'),
+  BigInt('1718076321612767'),
+  BigInt('89339968723859369'),
+  BigInt('4645678373640686797'),
+  BigInt('241575275429315704687'),
+  BigInt('12561914322324416642513'),
+  BigInt('653219544760869665410597'),
+  BigInt('33967416327565222601344681'),
+  BigInt('1766305649033391575269916279')
+]
+export const inverses52: GoldenInverses = [
+  BigInt('0'),
+  BigInt('45'),
+  BigInt('789'),
+  BigInt('98275'),
+  BigInt('4792803'),
+  BigInt('18504197'),
+  BigInt('3605210299'),
+  BigInt('872383628629'),
+  BigInt('6381573343605'),
+  BigInt('1606093097711647'),
+  BigInt('122865877613730969'),
+  BigInt('2043452977264427013'),
+  BigInt('348656741370725648271'),
+  BigInt('4661925816478442011441'),
+  BigInt('21331051151155421175213'),
+  BigInt('22865657849047106158804377'),
+  BigInt('2834643315706544678749403975')
+]
