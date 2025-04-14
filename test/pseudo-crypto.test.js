@@ -4,6 +4,7 @@ const pseudoCrypto = {
   numeric: new PseudoCrypto('numeric'),
   inline: new PseudoCrypto('inline'),
   wide: new PseudoCrypto('wide'),
+  thin: new PseudoCrypto('thin'),
   lowercase: new PseudoCrypto('lowercase'),
   uppercase: new PseudoCrypto('uppercase'),
   alphabetic: new PseudoCrypto('alphabetic'),
@@ -48,7 +49,7 @@ function randomNumber(min, max) {
 }
 
 function text(i, t, v, n, l) {
-  return `I ${i}: ${t} hash/unhash for ${v} ${n} and len ${l}`
+  return `i${i}: ${t} hash/unhash for ${v} ${n} and len ${l}`
 }
 
 let index = 0
@@ -56,6 +57,7 @@ for (const data of [
   { type: 'numeric', cc: 10 },
   { type: 'inline', cc: 13 },
   { type: 'wide', cc: 21 },
+  { type: 'thin', cc: 3 },
   { type: 'uppercase', cc: 26 },
   { type: 'lowercase', cc: 26 },
   { type: 'alphabetic', cc: 52 },
