@@ -13,21 +13,23 @@ const PseudoCrypto = require('pseudo-crypto')
 
 const pc = {
   numeric: new PseudoCrypto('09'),
-  inline: new PseudoCrypto('l_'),
-  wide: new PseudoCrypto('l-'),
+  inline: new PseudoCrypto('._'),
+  wide: new PseudoCrypto('.-'),
+  thin: new PseudoCrypto('-|'),
   lowercase: new PseudoCrypto('az'),
   uppercase: new PseudoCrypto('AZ'),
   alphabetic: new PseudoCrypto('Az'),
   alphanumeric: new PseudoCrypto('A9') // default
 }
 console.log([
-  pc.numeric.hash(123, 4),      // 2231
-  pc.inline.hash(123, 6),       // amcnno
-  pc.wide.hash(123, 8),         // amakvopn
-  pc.lowercase.hash(123, 10),   // amhocteszt
-  pc.uppercase.hash(123, 12),   // AMHOCTEMZQOF
-  pc.alphabetic.hash(123, 14),  // AxIRjfDrnqmIwH
-  pc.alphanumeric.hash(123, 16) // 17swtRKHykKxTu9D
+  pc.numeric.hash(69, 2),      // 23
+  pc.inline.hash(69, 4),       // usaz
+  pc.wide.hash(69, 6),         // rpdhmh
+  pc.thin.hash(69, 8),         // illllllI
+  pc.lowercase.hash(69, 10),   // qtpahwvbdr
+  pc.uppercase.hash(69, 12),   // QTPAHWUXUCHZ
+  pc.alphabetic.hash(69, 14),  // haQEsDYzJiGKEJ
+  pc.alphanumeric.hash(69, 16) // dwrVWc0nP0Ho08oX
 ].join('\n'))
 ```
 
