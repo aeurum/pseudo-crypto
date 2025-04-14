@@ -36,6 +36,11 @@ const baseData: Record<string, BaseData> = {
     characterCount: BigInt(21),
     characterCodes: unchain('abcdeghkmnopqrsuvwxyz')
   },
+  thin: {
+    fillString: 'I',
+    characterCount: BigInt(3),
+    characterCodes: unchain('Iil')
+  },
   lowercase: {
     fillString: 'a',
     characterCount: BigInt(26),
