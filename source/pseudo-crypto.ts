@@ -1,5 +1,3 @@
-export = PseudoCrypto
-
 import {
   GoldenPrimes,
   GoldenInverses,
@@ -9,6 +7,8 @@ import {
   CharacterSetType
 } from './interfaces'
 import { derive } from './data'
+
+export = PseudoCrypto
 
 class PseudoCrypto {
   /**
@@ -62,8 +62,9 @@ class PseudoCrypto {
   private adjustType(type: CharacterSetType): CharacterSetType {
     switch (type) {
       case '09': case 'numeric':      return 'numeric'
-      case 'l_': case 'inline':       return 'inline'
-      case 'l-': case 'wide':         return 'wide'
+      case '._': case 'inline':       return 'inline'
+      case '.-': case 'wide':         return 'wide'
+      case '-|': case 'thin':         return 'thin'
       case 'az': case 'lowercase':    return 'lowercase'
       case 'AZ': case 'uppercase':    return 'uppercase'
       case 'Az': case 'alphabetic':   return 'alphabetic'
